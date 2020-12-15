@@ -42,7 +42,7 @@ public class Controlador extends HttpServlet {
                car.setItem(item);
                car.setIdProducto(p.getId());
                car.setNombres(p.getNombres());
-               car.setDescripcion(p.getDescription());
+               car.setDescription(p.getDescription());
                car.setPrecioCompra(p.getPrecio());
                car.setCantidad(cantidad);
                car.setSubTotal(cantidad*p.getPrecio());
@@ -77,7 +77,7 @@ public class Controlador extends HttpServlet {
                         car.setItem(item);
                         car.setIdProducto(p.getId());
                         car.setNombres(p.getNombres());
-                        car.setDescripcion(p.getDescription());
+                        car.setDescription(p.getDescription());
                         car.setPrecioCompra(p.getPrecio());
                         car.setCantidad(cantidad);
                         car.setSubTotal(cantidad*p.getPrecio());
@@ -89,7 +89,7 @@ public class Controlador extends HttpServlet {
                     car.setItem(item);
                     car.setIdProducto(p.getId());
                     car.setNombres(p.getNombres());
-                    car.setDescripcion(p.getDescription());
+                    car.setDescription(p.getDescription());
                     car.setPrecioCompra(p.getPrecio());
                     car.setCantidad(cantidad);
                     car.setSubTotal(cantidad*p.getPrecio());

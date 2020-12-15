@@ -5,8 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
-<link href="css/estilos.css" rel="stylesheet" type="text/css" />
+<title>Creusa Lima</title>
 <link href=”bootstrap/css/bootstrap.min.css” rel=”stylesheet”
 	type=”text/css” />
 <link rel="stylesheet"
