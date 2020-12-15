@@ -72,25 +72,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <c:forEach var="car" items="${carrito}">
-                                <tr>
-                                    <td>${car.getItem()}</td>
-                                    <td>${car.getNombres()}</td>
-                                    <td>${car.getDescripcion()}
-                                        <img src="ControladorIMG?id=${car.getIdProducto()}" width="100" height="100">
-                                    </td>
-                                    <td>${car.getPrecioCompra()}</td>
-                                    <td>
-                                        <input type="hidden" id="idpro" value="${car.getIdProducto()}">
-                                        <input type="number" id="Cantidad" value="${car.getCantidad()}"  class="form-control text-center" min="1" >
-                                    </td>
-                                    <td>${car.getSubTotal()}</td>
-                                    <td>
-                                        <input type="hidden" id="idp" value="${car.getIdProducto()}">
-                                        <a href="#" id="btnDelete">Eliminar</a>  
-                                    </td>
-                                </tr>
-                            </c:forEach>
+                            
                         </tbody>
                     </table>
 			</div>
