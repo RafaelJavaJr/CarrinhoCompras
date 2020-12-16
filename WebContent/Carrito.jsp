@@ -27,8 +27,7 @@
 				<li class="nav-item active"><a class="nav-link"
 					href="Controlador?accion=home">Home <span class="sr-only">(current)</span></a>
 				</li>
-				<li class="nav-item"><a class="nav-link" href="#">Ofertas
-						do Dia</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Ofertas do Dia</a></li>
 
 				<li class="nav-item"><a class="nav-link"
 					href="Controlador?accion=home">Seguir Comprando</a></li>
@@ -53,7 +52,7 @@
 		</div>
 	</nav>
 	<div class="container mt-4">
-		<h3>Carrito</h3>
+		<h3>Carrinho</h3>
 		<br>
 		<div class="row">
 			<div class="col-sm-8">
@@ -86,7 +85,7 @@
 								<td>${car.getSubTotal()}</td>
 								<td><input type="hidden" id="idp"
 									value="${car.getIdProducto()}"> <a href="#"
-									id="btnDelete">Eliminar</a></td>
+									id="btnDelete">Deletar</a></td>
 							</tr>
 						</c:forEach>
 					</tbody>
@@ -96,7 +95,7 @@
 			<div class="col-sm-4">
 				<div class="card">
 					<div class="card-header">
-						<h3>Gerar Compras</h3>
+						<h3>Gerar Compra</h3>
 					</div>
 					<div class="card-body">
 						<label>Subtotal:</label> <input type="text"
@@ -107,9 +106,9 @@
 							class="form-control">
 					</div>
 					<div class="card-footer">
-						<a href="#" class="btn btn-info btn-block">Realizar Pago</a> 
+						<a href="#" class="btn btn-info btn-block">Realizar Pagamento</a> 
 						<a href="Controlador?accion=GenerarComprar"
-							class="btn btn-danger btn-block">Generar Compra</a>
+							class="btn btn-danger btn-block">Finalizar Compra</a>
 					</div>
 				</div>
 			</div>
