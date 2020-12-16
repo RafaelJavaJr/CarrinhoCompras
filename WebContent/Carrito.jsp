@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>JSP Page</title>
+<title>Creusa Lima</title>
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
 <link rel="css/estilos.css" rel="stylesheet" type="text/css">
@@ -15,7 +15,7 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="#">Ventas Store</a>
+		<a class="navbar-brand" href="#">Creusa Lima</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
 			data-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -28,7 +28,7 @@
 					href="Controlador?accion=home">Home <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item"><a class="nav-link" href="#">Ofertas
-						del Dia</a></li>
+						do Dia</a></li>
 
 				<li class="nav-item"><a class="nav-link"
 					href="Controlador?accion=home">Seguir Comprando</a></li>
@@ -61,12 +61,12 @@
 					<thead>
 						<tr>
 							<th>ITEM</th>
-							<th>NOMBRES</th>
-							<th>DESCRIPCION</th>
-							<th>PRECIO</th>
-							<th>CANTIDAD</th>
+							<th>NOMES</th>
+							<th>DESCRICAO</th>
+							<th>PRECO</th>
+							<th>QUANTIDADE</th>
 							<th>SUBTOTAL</th>
-							<th>ACCIONES</th>
+							<th>ACOES</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -96,14 +96,14 @@
 			<div class="col-sm-4">
 				<div class="card">
 					<div class="card-header">
-						<h3>Generar Compras</h3>
+						<h3>Gerar Compras</h3>
 					</div>
 					<div class="card-body">
 						<label>Subtotal:</label> <input type="text"
-							value="S/ ${totalPagar}0" readonly="" class="form-control">
-						<label>Descuento:</label> <input type="text" value="S/.0.00"
+							value="R$ ${totalPagar}0" readonly="" class="form-control">
+						<label>Desconto:</label> <input type="text" value="R$ 0.00"
 							readonly="" class="form-control"> <label>Total
-							Pagar</label> <input type="text" value="S/ ${totalPagar}0" readonly=""
+							Pagar</label> <input type="text" value="R$ ${totalPagar}0" readonly=""
 							class="form-control">
 					</div>
 					<div class="card-footer">
