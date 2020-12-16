@@ -10,8 +10,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import br.com.rafael.config.Fecha;
 import br.com.rafael.modelo.Carrito;
+import br.com.rafael.modelo.Cliente;
+import br.com.rafael.modelo.Compra;
 import br.com.rafael.modelo.Producto;
+import br.com.rafael.modeloDAO.CompraDAO;
 import br.com.rafael.modeloDAO.ProdutoDAO;
 
 @WebServlet("/Controlador")
@@ -117,7 +121,18 @@ public class Controlador extends HttpServlet {
                    }
                }
                break;
-           
+           case "GenerarComprar":
+               Cliente cliente = new Cliente();
+               cliente.setId(6);
+               CompraDAO dao=new CompraDAO();
+               Compra compra=new Compra(cliente, 1, Fecha.FechaBD(), totalPagar, "Cancelado", listaCarrito);
+               int res=dao.GenerarCompra(compra);
+               if (res!=0&&totalPagar>0) {
+                   request.getRequestDispatcher("mensagem.jsp").forward(request, response);
+               }else{
+                   request.getRequestDispatcher("erro.jsp").forward(request, response);
+               }
+               break; 
            case "Carrito":
                totalPagar=0.0;
                request.setAttribute("carrito", listaCarrito);
