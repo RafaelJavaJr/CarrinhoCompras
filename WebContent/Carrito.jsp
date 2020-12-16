@@ -127,7 +127,8 @@
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	<script type="text/javascript" src="/WEB-INF/resources/js/funciones.js">
+	<script type="text/javascript" src="/js/funciones.js">
+	</script>
 	</script>
 </body>
 </html>

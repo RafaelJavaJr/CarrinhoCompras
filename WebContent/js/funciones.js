@@ -18,7 +18,7 @@ $(document).ready(function () {
                             }
                         });
                     } else {
-                        swal("Registro no eliminado!");
+                        swal("Registro não eliminado!");
                     }
                 });
     });
