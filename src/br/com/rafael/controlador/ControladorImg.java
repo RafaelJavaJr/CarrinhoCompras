@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import br.com.rafael.modelo.ProdutoDAO;
+import br.com.rafael.modeloDAO.ProdutoDAO;
 
 @WebServlet("/ControladorImg")
 public class ControladorImg extends HttpServlet {

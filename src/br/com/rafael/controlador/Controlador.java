@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import br.com.rafael.modelo.Carrito;
 import br.com.rafael.modelo.Producto;
-import br.com.rafael.modelo.ProdutoDAO;
+import br.com.rafael.modeloDAO.ProdutoDAO;
 
 @WebServlet("/Controlador")
 public class Controlador extends HttpServlet {

@@ -1,4 +1,4 @@
-package br.com.rafael.modelo;
+package br.com.rafael.modeloDAO;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -13,6 +13,7 @@ import java.util.List;
 import javax.servlet.http.HttpServletResponse;
 
 import br.com.rafael.config.Conexion;
+import br.com.rafael.modelo.Producto;
 
 public class ProdutoDAO {
 	Connection con;
