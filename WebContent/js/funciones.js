@@ -14,7 +14,7 @@ $(document).ready(function () {
                             icon: "success",
                         }).then((willDelete)=>{
                             if(willDelete){
-                                parent.location.href="Controlador?accion=Carrito";
+                                parent.location.href="Controlador?accion=carrito";
                             }
                         });
                     } else {
@@ -43,7 +43,7 @@ $(document).ready(function () {
           url: url,
           data: "idp="+ idp + "&Cantidad=" + cantidad,
           success: function(data, textStatus, jqXHR){
-              location.href="Controlador?accion=Carrito";
+              location.href="Controlador?accion=carrito";
           }
        });
    });

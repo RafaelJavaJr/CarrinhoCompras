@@ -14,6 +14,7 @@
 	crossorigin="anonymous">
 </head>
 <body>
+	<script type="text/javascript" src="/js/funciones.js"></script>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<a class="navbar-brand" href="#">Creusa Lima</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -78,14 +79,15 @@
 									height="100">
 								</td>
 								<td>${car.getPrecioCompra()}</td>
-								<td><input type="hidden" id="idpro"
-									value="${car.getIdProducto()}"> <input type="number"
-									id="Cantidad" value="${car.getCantidad()}"
-									class="form-control text-center" min="1"></td>
+								<td>
+									<input type="hidden" id="idpro" value="${car.getIdProducto()}"> 
+									<input type="number" id="Cantidad" value="${car.getCantidad()}" class="form-control text-center" min="1">
+								</td>
 								<td>${car.getSubTotal()}</td>
-								<td><input type="hidden" id="idp"
-									value="${car.getIdProducto()}"> <a href="#"
-									id="btnDelete">Deletar</a></td>
+								<td>
+									<input type="hidden" id="idp" value="${car.getIdProducto()}">
+									<a href="#" id="btnDelete">Deletar</a>
+								</td>
 							</tr>
 						</c:forEach>
 					</tbody>
@@ -114,6 +116,7 @@
 			</div>
 		</div>
 	</div>
+	
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
 		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 		crossorigin="anonymous"></script>
@@ -126,8 +129,7 @@
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	<script type="text/javascript" src="/js/funciones.js">
-	</script>
-	</script>
+	
+
 </body>
 </html>
